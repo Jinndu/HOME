@@ -27,6 +27,9 @@ body{
   height: 1rem;
   transition-duration: 0.5ms;
 }
+.hidden{
+  visibility: hidden;
+}
 /* body */
 .body{
   padding: 3%;
@@ -132,62 +135,58 @@ bottom:0.2rem;
 /* mobile tweaks */
 @media screen and (max-width: 650px){
   /* watchlive-carousel */
+  .hidden{
+    visibility: visible;
+  }
   .visibility{
     visibility: hidden;
   }
+  p{
+    display: inline;
+    font-size: 0.5rem;
+  }
+  /* body */
   h1{
-    font-size: 2rem;
+    width: 40%;
+    padding-top: 1rem;
+    font-size: 1.5rem;
   }
+  .btn{
+    font-size: 0.5rem;
+  }
+  .fb{
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    right: 2%;
+  }
+
   /* live tv */
-  #live{
-    padding: 2rem 0.5rem;
-    height: 15rem;
+  .tv{
+    height: 200px;
   }
-  .alignment{
-    padding-left: 2rem;
+  .tv1{
+    width: 50%;
   }
-  video{
+  .tv2{
+    width: 50%;
+  }
+  .vid{
     width: 100%;
   }
-  /* latest news */
-  #latest-news{
-    padding: 7rem 2rem 3rem;
-    width: 100%;
+  /* Latest News */
+  .flex{
+    display: flex
+  }
+  .img{
+    width: 30%;
   }
   h2{
-    padding-bottom: 2rem;
-    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }
-}
-@media screen and (max-width: 768px) {
-  /* watchlive-carousel */
-  .visibility{
-    visibility: hidden;
-  }
-  h1{
-    font-size: 2rem;
-  }
-  /* live tv */
-  #live{
-    padding: 2rem 0.5rem;
-    height: 15rem;
-  }
-  .alignment{
-    padding-left: 2rem;
-  }
-  video{
-    width: 100%;
-  }
-  /* latest news */
-  #latest-news{
-    padding: 7rem 2rem 3rem;
-    width: 100%;
-  }
-  h2{
-    padding-bottom: 2rem;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+   /* footer */
+   .copy-right{
+     font-size: 16px;
+   }
 }
